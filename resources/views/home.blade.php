@@ -2,7 +2,7 @@
 @section("titulo", "Inicio")
 @section('contenido')
     <div class="col-12 text-center">
-        <h1>Bienvenido, {{Auth::user()->nombre}}</h1>
+        <h1>Bienvenido {{Auth::user()->nombre}}</h1>
     </div>
     @foreach([
     ["productos", "ventas", "vender", "clientes"],

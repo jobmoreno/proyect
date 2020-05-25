@@ -11,6 +11,18 @@
                     <input required autocomplete="off" name="nombre" class="form-control"
                            type="text" placeholder="Nombre">
                 </div>
+                                
+                <div class="form-group">
+                    <label class="label">RFC</label>
+                    <input required autocomplete="off" name="rfc" class="form-control"
+                           type="text" placeholder="RFC">
+                </div>
+
+                <div class="form-group">
+                    <label class="label">Dimicilio</label>
+                    <input required autocomplete="off" name="domicilio" class="form-control"
+                           type="text" placeholder="Dimicilio">
+                </div>
                 <div class="form-group">
                     <label class="label">Teléfono</label>
                     <input required autocomplete="off" name="telefono" class="form-control"

@@ -11,6 +11,8 @@
                     <thead>
                     <tr>
                         <th>Nombre</th>
+                        <th>RFC</th>
+                        <th>Domicilio</th>
                         <th>Teléfono</th>
 
                         <th>Editar</th>
@@ -21,6 +23,8 @@
                     @foreach($clientes as $cliente)
                         <tr>
                             <td>{{$cliente->nombre}}</td>
+                            <td>{{$cliente->rfc}}</td>
+                            <td>{{$cliente->domicilio}}</td>
                             <td>{{$cliente->telefono}}</td>
                             <td>
                                 <a class="btn btn-warning" href="{{route("clientes.edit",[$cliente])}}">

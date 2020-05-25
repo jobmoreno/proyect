@@ -4,26 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="{{env("APP_NAME")}}">
-    <title>@yield("titulo") - {{env("APP_NAME")}}</title>
-    <link href="{{url("/css/bootstrap.min.css")}}" rel="stylesheet">
-    <link href="{{url("/css/all.min.css")}}" rel="stylesheet">
-    <style>
-        body {
-            padding-top: 70px;
-            /*Para la barra inferior fija*/
-            padding-bottom: 70px;
-        }
-    </style>
+    <title>@yield("titulo") </title>
+    <link href="{{url("/css/bootstrap.css")}}" rel="stylesheet">
+    <script src="{{url('/js/jquery-3.2.1.min.js')}}"></script>
+    <script src="{{url('/js/bootstrap/js/bootstrap.js')}}"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark ">
     <span class="navbar-brand">{{env("APP_NAME")}}</span>
     <button class="navbar-toggler" type="button" data-toggle="collapse"
-            id="botonMenu" aria-label="Mostrar u ocultar menú">
+            id="botonMenu" aria-label="Mostrar u ocultar menú" data-target="#menu" aria-controls="menu" aria-expanded="false">
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="menu">
+    <div class="collapse navbar-collapse" id="menu" style="margin-top: 10px;">
         <ul class="navbar-nav mr-auto">
             @guest
                 <li class="nav-item">

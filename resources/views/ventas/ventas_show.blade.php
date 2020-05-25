@@ -10,7 +10,7 @@
                 <i class="fa fa-arrow-left"></i>&nbsp;Volver
             </a>
             <h2>Productos</h2>
-            <table class="table table-bordered">
+            <table class="table table-bordered table-primary">
                 <thead>
                 <tr>
                     <th>Descripción</th>

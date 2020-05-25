@@ -6,7 +6,7 @@
             <h1>Ventas <i class="fa fa-list"></i></h1>
             @include("notificacion")
             <div class="table-responsive">
-                <table class="table table-bordered">
+                <table class="table table-bordered table-primary">
                     <thead>
                     <tr>
                         <th>Fecha</th>

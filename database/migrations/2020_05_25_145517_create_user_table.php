@@ -18,7 +18,7 @@ class CreateUserTable extends Migration
             $table->text('nombre');
             $table->text('direccion');
             $table->text('ciudad');
-            $table->bigInteger('telefono');
+            $table->text('telefono');
             $table->text('cargo');
             $table->decimal('salario',10,2);
             $table->string('email')->unique();
