@@ -8,9 +8,7 @@ Route::get('/', function () {
     return redirect()->route("home");
 });
 
-Auth::routes([
-    "reset" => false,// no pueden olvidar contraseña
-]);
+Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 // Permitir logout con petición get
@@ -20,12 +18,10 @@ Route::get("/logout", function () {
 })->name("logout");
 
 
-Route::middleware("auth")
-    ->group(function () {
+Route::middleware("verified")->group(function () {
         Route::resource("clientes", "ClientesController");
         Route::resource("usuarios", "UserController")->parameters(["usuarios" => "user"]);
-        Route::resource("productos", "ProductosController");
-        Route::get("/ventas/ticket", "VentasController@ticket")->name("ventas.ticket");
+        Route::resource("productos", "ProductosController"); 
         Route::resource("ventas", "VentasController");
         Route::get("/vender", "VenderController@index")->name("vender.index");
         Route::post("/productoDeVenta", "VenderController@agregarProductoVenta")->name("agregarProductoVenta");
