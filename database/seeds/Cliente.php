@@ -14,7 +14,7 @@ class Cliente extends Seeder
          DB::table('clientes')->insert([
         	'nombre'=>'Kevin Orozco',
         	'rfc' => '123456789', 
-        	'domicilio' => 'Rinconada del Auditorio #25',
+        	'domicilio' => 'Rinconada del Auditorio #35',
         	'telefono' => '3526478512',
         ]);
     }

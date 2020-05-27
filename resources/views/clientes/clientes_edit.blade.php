@@ -13,6 +13,16 @@
                            type="text" placeholder="Nombre">
                 </div>
                 <div class="form-group">
+                    <label class="label">RFC</label>
+                    <input required value="{{$cliente->rfc}}" autocomplete="off" name="nombre" class="form-control"
+                           type="text" placeholder="Nombre">
+                </div>
+                <div class="form-group">
+                    <label class="label">Domicilio</label>
+                    <input required value="{{$cliente->domicilio}}" autocomplete="off" name="nombre" class="form-control"
+                           type="text" placeholder="Nombre">
+                </div>
+                <div class="form-group">
                     <label class="label">Teléfono</label>
                     <input required value="{{$cliente->telefono}}" autocomplete="off" name="telefono"
                            class="form-control"

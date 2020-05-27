@@ -6,7 +6,7 @@
             <h1>Nueva venta <i class="fa fa-cart-plus"></i></h1>
             @include("notificacion")
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-3">
                     <form action="{{route("terminarOCancelarVenta")}}" method="post">
                         @csrf
                         <div class="form-group">
